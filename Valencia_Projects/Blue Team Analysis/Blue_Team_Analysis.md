@@ -14,6 +14,7 @@ Our assessment reveals several critical vulnerabilities within the network:
 
 ### 1. Topology and Structure
 The current topology and structure are susceptible to internal threats. Servers and endpoint devices share the same network layer, making the servers vulnerable to malware from endpoint devices, which could compromise the confidentiality, integrity, and availability of services like ADDS, DHCP, DNS, and IIS servers.
+
 ![Network Topology](../Images/Pic1.png)
 
 ### 2. Password Policy
