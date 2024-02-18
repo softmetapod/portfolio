@@ -58,6 +58,3 @@ Security applications, such as anti-virus software, were tested for efficacy and
 
 The Red Team's assessment of FFVVI.tech's network revealed multiple vulnerabilities, underscoring the need for significant security enhancements. The absence of robust firewall defenses, poor password policies, and the lack of network segmentation were among the critical issues identified that could lead to potential cyber attacks.
 
-## Network Diagram
-
-![Network Topology](./path/to/network_diagram.png)
