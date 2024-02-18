@@ -1,4 +1,4 @@
-# Enhanced Red Team Analysis for FFVVI.tech Network
+# Red Team Analysis for FFVVI.tech Network
 
 ## Executive Summary
 
