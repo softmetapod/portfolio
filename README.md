@@ -10,6 +10,7 @@ I am a Tier 2 IT Professional with over seven years of experience in technical s
 
 | Role | Organization | Period |
 |------|-------------|--------|
+| Cloud Security Engineer | First Carolina Bank | Mar 2022 - Present |
 | Tier 2 Technical Support Engineer | DNSFilter | Jan 2022 - Present |
 | Technical Support Administrator | Universal Technical Institute | May 2021 - Dec 2021 |
 | IT Support Administrator | Prescient National | Mar 2020 - Mar 2021 |
