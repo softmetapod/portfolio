@@ -1,41 +1,63 @@
-# Azure Lab Questions and Answers
+# Azure Cloud Security Lab - Questions & Answers
 
-## How does Azure Active Directory enhance security within the Azure environment?
+These questions and answers cover the core Azure security concepts explored in the [Azure Cloud Security Lab](Azure%20Cloud%20Security%20Setup.md).
 
-Azure Active Directory enhances security by serving as an identity and access management service that supports conditional access policies and Multi-Factor Authentication (MFA). This effectively weeds out unauthorized access to Azure resources.
+---
 
-## What role does Azure Firewall play in securing Azure virtual networks?
+**How does Azure Active Directory enhance security within the Azure environment?**
 
-The role of Azure Firewall is akin to a gatekeeper for your Azure VNet and the internet; it scrutinizes all inbound and outbound traffic against set rules to shield against unauthorized access and attacks, allowing only verified traffic through.
+Azure Active Directory enhances security by serving as an identity and access management service that supports conditional access policies and Multi-Factor Authentication (MFA). This effectively prevents unauthorized access to Azure resources by requiring identity verification before granting access to any service.
 
-## How does enabling encryption on Azure Storage Accounts protect data?
+---
 
-Encrypting Azure Storage Accounts protects data at rest either with Azure's own or customer-managed keys in Azure Key Vault, ensuring sensitive data remains out of unauthorized hands, even if they somehow access the storage account.
+**What role does Azure Firewall play in securing Azure virtual networks?**
 
-## What benefits does Azure Key Vault offer in terms of security?
+Azure Firewall acts as a centralized gatekeeper between your Azure VNet and the internet. It scrutinizes all inbound and outbound traffic against defined rules to shield against unauthorized access and attacks, allowing only verified traffic through.
 
-Azure Key Vault's benefits include the secure storage of secrets, keys, and certificates, drastically reducing exposure risks. Its access policies grant retrieval rights solely to authorized applications and users.
+---
 
-## How does Azure Security Center help maintain a secure Azure environment?
+**How does enabling encryption on Azure Storage Accounts protect data?**
 
-Azure Security Center plays a pivotal role in maintaining a secure Azure environment through continuous security monitoring and actionable insights. It proactively identifies threats and offers real-time advanced threat protection.
+Encrypting Azure Storage Accounts protects data at rest using either Azure-managed or customer-managed keys stored in Azure Key Vault. This ensures sensitive data remains unreadable to unauthorized parties, even if they gain access to the underlying storage infrastructure.
 
-## How does Azure Policy contribute to cloud security?
+---
 
-Azure Policy enforces organizational standards and compliance across Azure resources, ensuring adherence to corporate guidelines and service level agreements, thus fortifying the security framework.
+**What benefits does Azure Key Vault offer in terms of security?**
 
-## What is the purpose of Azure Network Security Groups (NSGs)?
+Azure Key Vault provides secure, centralized storage for secrets, cryptographic keys, and certificates. Its access policies ensure that only authorized applications and users can retrieve sensitive material, drastically reducing the risk of credential exposure.
 
-Azure Network Security Groups (NSGs) function to filter network traffic to and from Azure resources within a VNet. By defining security rules, NSGs manage access to resources, enhancing control over traffic flow.
+---
 
-## How does Azure's role-based access control (RBAC) enhance security?
+**How does Azure Security Center help maintain a secure Azure environment?**
 
-Azure's Role-Based Access Control (RBAC) tightens security by assigning specific roles to users, groups, and applications. This granular access management ensures individuals have only the necessary permissions, adhering to the principle of least privilege.
+Azure Security Center provides continuous security monitoring, threat detection, and actionable remediation recommendations. It proactively identifies misconfigurations and vulnerabilities across your Azure resources and offers real-time advanced threat protection.
 
-## What is Azure Defender, and how does it protect your cloud resources?
+---
 
-Azure Defender is a comprehensive cloud workload protection platform offering across-the-board threat protection for Azure services. It leverages AI to uncover and neutralize stealthy threats, providing guidance on risk mitigation.
+**How does Azure Policy contribute to cloud security?**
 
-## How do Azure Application Gateways contribute to application security?
+Azure Policy enforces organizational standards and compliance requirements across Azure resources. It ensures that all deployed resources adhere to corporate security guidelines and service level agreements, preventing configuration drift.
 
-Azure Application Gateways elevate application security through application-level routing and load balancing. They include Web Application Firewall (WAF) features, safeguarding web applications from common vulnerabilities by vetting inbound traffic and thwarting malicious requests, such as SQL injections and XSS attacks.
+---
+
+**What is the purpose of Azure Network Security Groups (NSGs)?**
+
+Network Security Groups filter network traffic to and from Azure resources within a VNet. By defining inbound and outbound security rules based on source, destination, port, and protocol, NSGs provide granular control over traffic flow and reduce attack surface.
+
+---
+
+**How does Azure's Role-Based Access Control (RBAC) enhance security?**
+
+RBAC enforces the principle of least privilege by assigning specific roles to users, groups, and applications. Each role grants only the permissions necessary for the assigned responsibilities, preventing excessive access that could be exploited.
+
+---
+
+**What is Azure Defender, and how does it protect your cloud resources?**
+
+Azure Defender is a cloud workload protection platform that provides advanced threat protection across Azure services. It leverages AI and behavioral analytics to detect and neutralize sophisticated threats, and provides actionable guidance for risk mitigation.
+
+---
+
+**How do Azure Application Gateways contribute to application security?**
+
+Azure Application Gateways provide application-level routing and load balancing with integrated Web Application Firewall (WAF) capabilities. The WAF inspects inbound HTTP/HTTPS traffic and blocks common web exploits including SQL injection and cross-site scripting (XSS) attacks.
