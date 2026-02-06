@@ -18,7 +18,10 @@ I am a Tier 2 IT Professional with over seven years of experience in technical s
 
 ## Education & Certifications
 
+- **Bachelor of Science** in Cybersecurity — University of Maine at Augusta, Augusta, ME
 - **Associate of Applied Science** in Network Engineering & Cybersecurity — Valencia College, Orlando, FL
+- **Microsoft Certified Security Operations Analyst Associate** (2025)
+- **CompTIA Security+** (2024)
 - **Threat Intelligence Analysis & Tools** (2023)
 - **Cybersecurity Certificate** (2019)
 - **Network Support Certificate** (2017)
