@@ -1,44 +1,70 @@
 # Passive Information Gathering on wordpress.org
 
-## Overview
+## Objective
 
-This document outlines the methods used for passive information gathering on the domain `wordpress.org`. Passive reconnaissance is a critical first step in the cybersecurity assessment process, as it allows for the collection of information without direct interaction with the target system. Tools such as `nslookup`, `dig`, `Nmap`, and `WPscan` were utilized to gather data.
+To perform passive reconnaissance against the domain `wordpress.org` using standard enumeration tools. Passive information gathering is a critical first phase in any security assessment, allowing the collection of actionable intelligence without directly interacting with the target's application layer.
+
+## Tools Used
+
+| Tool | Purpose |
+|------|---------|
+| `nslookup` | DNS resolution and server identification |
+| `Nmap` | Port scanning and service enumeration |
+| `dig` | Detailed DNS record queries |
+| `WPscan` | WordPress-specific vulnerability scanning |
+
+---
 
 ## Methods and Findings
 
-### nslookup
+### nslookup — DNS Resolution
 
-`nslookup` is a network administration command-line tool used for querying the Domain Name System (DNS) to obtain domain name or IP address mapping. For `wordpress.org`, `nslookup` provided the server's IP address and indicated the authoritative status of the response.
+`nslookup` queries the Domain Name System to resolve domain names to IP addresses and identify the responding DNS server.
 
-- **Server and Address**: Identified the DNS server used and its IP address.
-- **Non-authoritative Answer**: Displayed the domain name and its associated IP address.
+**Findings for `wordpress.org`:**
+- Identified the DNS server used for resolution and its IP address.
+- Received a non-authoritative response containing the domain's associated IP address.
 
 ![nslookup Results](../Images/nslookup1.png)
 
-### Nmap
+---
 
-`Nmap` ("Network Mapper") is an open-source tool for network discovery and security auditing. It was used to scan for open ports on the IP addresses associated with `wordpress.org`.
+### Nmap — Port Scanning and Service Detection
 
-- **Open Ports**: Determined the state of ports and the services running on them, which is crucial for identifying potential vulnerabilities.
+Nmap ("Network Mapper") was used to scan the resolved IP addresses for open ports and running services — key information for identifying potential attack vectors.
+
+**Findings:**
+- Identified open ports and their associated services, providing a map of the target's externally accessible services.
 
 ![Nmap Scan Results](../Images/nmap1.png)
 
-### dig
+---
 
-The `dig` command is used for probing DNS name servers. It provides detailed information about domain names, including their A records (addresses).
+### dig — DNS Record Enumeration
 
-- **A Records**: Revealed the numerical IP addresses corresponding to `wordpress.org`, which is valuable for bypassing DNS resolution in subsequent tests.
+The `dig` command performs detailed DNS queries, retrieving A records, MX records, and other DNS data.
+
+**Findings:**
+- Retrieved A records revealing the IP addresses behind `wordpress.org`, which can be used to bypass DNS resolution in subsequent testing or to identify hosting infrastructure.
 
 ![dig Command Results](../Images/dig1.png)
 
-### WPscan
+---
 
-`WPscan` is a black box WordPress vulnerability scanner. An attempt was made to use `WPscan` to enumerate the WordPress site details, but the scan was aborted as the target did not appear to be a WordPress site.
+### WPscan — WordPress Vulnerability Scanning
 
-- **Error**: Indicates the importance of verifying the platform before running platform-specific tools to avoid unnecessary errors.
+WPscan is a black-box WordPress vulnerability scanner that enumerates plugins, themes, users, and known CVEs. An attempt was made to scan `wordpress.org` for WordPress-specific vulnerabilities.
+
+**Finding:**
+- The scan was aborted because the target did not present as a standard WordPress installation. This demonstrates the importance of verifying the target platform before running platform-specific tools to avoid wasted effort and potential false results.
 
 ![WPscan Error](../Images/wpscan1.png)
 
-## Conclusion
+---
 
-The passive information gathering conducted on `wordpress.org` using various tools provided foundational data that will inform further security analysis. Understanding the DNS structure, open ports, and services running on the target system is essential for a comprehensive security assessment.
+## Key Takeaways
+
+- Passive reconnaissance with DNS tools (`nslookup`, `dig`) provides foundational intelligence about a target's infrastructure without generating suspicious traffic.
+- Port scanning with Nmap reveals the external attack surface — which services are exposed and potentially exploitable.
+- Platform-specific tools like WPscan should only be used after confirming the target technology stack.
+- The information gathered in this phase informs all subsequent assessment activities, from vulnerability scanning to exploitation.

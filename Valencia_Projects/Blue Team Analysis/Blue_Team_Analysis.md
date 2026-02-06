@@ -1,12 +1,21 @@
-# Comprehensive Blue Team Network Security Strategy
+# Blue Team Network Security Strategy
 
 ## Executive Summary
 
-This document articulates a meticulous Blue Team strategy, aimed at fortifying the defenses of our multi-device network. We dissect our approach to cater to the specific security requirements of each network component. Our goal is to ensure robust protection against unauthorized access, data breaches, and various cyber threats.
+This document presents a comprehensive Blue Team defensive strategy for a multi-device star topology network. Each network component is analyzed for its specific vulnerabilities, and targeted hardening measures are prescribed to ensure robust protection against unauthorized access, data breaches, and cyber threats.
 
 ## Network Analysis Overview
 
-Our network is structured using a star topology, which encompasses a wireless gateway router, a switch, multiple client computers, a DHCP server, a DNS/ADDS server, an IIS web server, and a network printer. The topology ensures dedicated communication pathways, however, our initial evaluation indicates significant security gaps due to the absence of password protection on key network devices.
+The network is structured using a star topology encompassing:
+- Wireless gateway router
+- Network switch
+- Multiple client computers
+- DHCP server
+- DNS/Active Directory Domain Services (ADDS) server
+- IIS web server
+- Network printer
+
+The topology provides dedicated communication pathways, however, initial evaluation identified significant security gaps — most critically the absence of password protection on key network devices.
 
 ## Network Diagram
 
@@ -16,74 +25,53 @@ Our network is structured using a star topology, which encompasses a wireless ga
 
 ### Router
 
-**Vulnerabilities**:
-- Currently lacks password protection, making it susceptible to unauthorized access and network eavesdropping.
-
-**Hardening Measures**:
-- Implement robust password protocols with AES encryption.
-- Enable firewall capabilities and Intrusion Detection Systems (IDS).
-- Regular firmware updates and disabling of unnecessary services.
+| Aspect | Details |
+|--------|---------|
+| **Vulnerability** | No password protection — susceptible to unauthorized access and network eavesdropping |
+| **Hardening** | Implement strong password protocols with AES encryption; enable firewall capabilities and IDS; schedule regular firmware updates; disable unnecessary services and protocols |
 
 ### Switch
 
-**Vulnerabilities**:
-- No password protection, which may allow unauthorized configuration changes and potential network compromise.
-
-**Hardening Measures**:
-- Secure with a complex password and implement port security measures.
-- Configure VLANs to segregate traffic and reduce attack surfaces.
-- Enable Switched Port Analyzer (SPAN) to assist with network traffic monitoring.
+| Aspect | Details |
+|--------|---------|
+| **Vulnerability** | No password protection — allows unauthorized configuration changes and potential network compromise |
+| **Hardening** | Secure with complex password and enable port security; configure VLANs to segregate traffic and reduce attack surface; enable SPAN (Switched Port Analyzer) for traffic monitoring |
 
 ### Client Computers
 
-**Vulnerabilities**:
-- Clients may be exposed to malware or targeted attacks, risking the integrity and confidentiality of the network.
-
-**Hardening Measures**:
-- Ensure all clients have up-to-date antivirus and antimalware protection.
-- Implement strict Group Policy Objects (GPOs) for system configuration and access control.
-- Educate users on security best practices to prevent phishing and social engineering attacks.
+| Aspect | Details |
+|--------|---------|
+| **Vulnerability** | Exposed to malware and targeted attacks, risking network integrity and confidentiality |
+| **Hardening** | Deploy up-to-date antivirus/antimalware; implement strict GPOs for configuration and access control; conduct user security awareness training against phishing and social engineering |
 
 ### DHCP Server
 
-**Vulnerabilities**:
-- Simple passwords and lack of segmentation from client access.
-
-**Hardening Measures**:
-- Apply a complex password policy and encrypt transmissions where possible.
-- Isolate the DHCP server in a separate VLAN and restrict access to authorized personnel only.
-- Enable DHCP snooping on the switch to prevent unauthorized DHCP servers from issuing IP addresses.
+| Aspect | Details |
+|--------|---------|
+| **Vulnerability** | Simple passwords and no segmentation from client access |
+| **Hardening** | Enforce complex password policy; isolate in a dedicated VLAN with restricted access; enable DHCP snooping on the switch to prevent rogue DHCP servers |
 
 ### DNS/ADDS Server
 
-**Vulnerabilities**:
-- As a critical service, exposure to DNS attacks and unauthorized Active Directory modifications can be detrimental.
-
-**Hardening Measures**:
-- Harden the DNS service against cache poisoning and DNS amplification attacks.
-- Enforce the principle of least privilege in Active Directory and conduct regular audits.
-- Implement multi-factor authentication for sensitive accounts.
+| Aspect | Details |
+|--------|---------|
+| **Vulnerability** | Exposure to DNS cache poisoning, amplification attacks, and unauthorized AD modifications |
+| **Hardening** | Harden DNS against cache poisoning and amplification; enforce least privilege in Active Directory with regular audits; implement MFA for privileged accounts |
 
 ### IIS Web Server
 
-**Vulnerabilities**:
-- Web servers are prime targets for attacks aiming to disrupt services or to gain unauthorized access.
+| Aspect | Details |
+|--------|---------|
+| **Vulnerability** | Prime target for service disruption and unauthorized access attacks |
+| **Hardening** | Maintain current patches for OS and applications; deploy a Web Application Firewall (WAF); regularly review web server logs for suspicious activity |
 
-**Hardening Measures**:
-- Keep the server and applications updated to patch known vulnerabilities.
-- Use a Web Application Firewall (WAF) to protect against common exploits.
-- Regularly review web server logs for signs of suspicious activity.
+### Network Printer
 
-### Printer
-
-**Vulnerabilities**:
-- Network printers can be an overlooked entry point for attackers.
-
-**Hardening Measures**:
-- Change default credentials and regularly update the printer firmware.
-- Configure the printer to only accept jobs from authorized network segments.
-- Disable unnecessary protocols and services on the printer.
+| Aspect | Details |
+|--------|---------|
+| **Vulnerability** | Often overlooked entry point — default credentials and unnecessary services |
+| **Hardening** | Change default credentials and update firmware regularly; restrict print jobs to authorized network segments only; disable unnecessary protocols and management interfaces |
 
 ## Conclusion
 
-By addressing the unique vulnerabilities of each device within our network, we can build a robust security posture that protects against a wide spectrum of cyber threats. This comprehensive approach ensures that security is not just a blanket application but a tailored fit for the intricacies of our network's architecture.
+By addressing the specific vulnerabilities of each device in the network, this strategy builds a layered security posture that protects against a wide spectrum of threats. Security is applied as a tailored fit for each component's role and risk profile, rather than a one-size-fits-all approach — ensuring that the network's architecture is defended at every level.
