@@ -10,8 +10,8 @@ I am a Cybersecurity Engineer with over seven years of experience in technical s
 
 | Role | Organization | Period |
 |------|-------------|--------|
-| Cloud Security Engineer | First Carolina Bank | Mar 2022 - Present |
-| Tier 2 Technical Support Engineer | DNSFilter | Jan 2022 - Present |
+| Cloud Security Engineer | First Carolina Bank | Mar 2024 - Present |
+| Tier 2 Technical Support Engineer | DNSFilter | Jan 2022 - Jan 2024 |
 | Technical Support Administrator | Universal Technical Institute | May 2021 - Dec 2021 |
 | IT Support Administrator | Prescient National | Mar 2020 - Mar 2021 |
 | IT Support Administrator Intern | Shutterfly | Apr 2019 - Dec 2019 |
