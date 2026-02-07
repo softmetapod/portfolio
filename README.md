@@ -4,7 +4,7 @@ Welcome to my cybersecurity portfolio. This repository contains hands-on labs, t
 
 ## About Me
 
-I am a Tier 2 IT Professional with over seven years of experience in technical support, IT administration, and cybersecurity. My expertise includes resolving complex technical issues, threat intelligence research, vulnerability management, and security operations. I work extensively with tools like Microsoft Defender, Power BI, Grafana, Redash, and Elastic SIEM, and I am skilled in VPN/DNS networking, Active Directory, and cloud security with Microsoft Azure.
+I am a Cybersecurity Engineer with over seven years of experience in technical support, IT administration, and cybersecurity. My expertise includes resolving complex technical issues, threat intelligence research, vulnerability management, and security operations. I work extensively with tools like Microsoft Defender, Power BI, Grafana, Redash, and Elastic SIEM, and I am skilled in VPN/DNS networking, Active Directory, and cloud security with Microsoft Azure.
 
 ## Professional Experience
 
