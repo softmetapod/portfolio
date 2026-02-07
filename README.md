@@ -79,6 +79,26 @@ I am a Tier 2 IT Professional with over seven years of experience in technical s
 | [Pharming Attack Mitigation](Valencia_Projects/Pharming%20Attacks/Pharming%20Attacks%20Report.md) | Security advisory on pharming and phishing risks in digital marketing — vulnerability analysis and actionable mitigation strategies for web and email channels. | .htaccess, DNS Security, Email Auth |
 | [Windows Server 2016 Upgrade](Valencia_Projects/Windows%2016%20Technical%20Report/Upgrading%20to%20Windows%202016.md) | Technical report on strategic upgrade from Windows Server 2008 to 2016 — Nano Server, container support, Shielded VMs, Storage Spaces Direct, and best practices. | Windows Server, Hyper-V, PowerShell |
 
+### Security Automation & Scripting
+
+| Project | Description | Tools |
+|---------|-------------|-------|
+| [Python Security Toolkit](Python%20Security%20Toolkit/Python%20Security%20Toolkit.md) | Collection of practical security automation scripts — IOC scanner for hash-based threat detection, auth log analyzer with brute force detection, network reconnaissance scanner, and phishing URL analyzer with risk scoring. Includes sample data for testing. | Python, Hashlib, Socket, Argparse |
+| [PowerShell Azure Security Audit](PowerShell%20Azure%20Security%20Audit/Azure%20Security%20Audit.md) | Enterprise Azure security audit toolkit — NSG misconfiguration detection, Storage Account security assessment, Azure AD/Entra ID identity audit (MFA gaps, stale accounts, privileged access review), and unified HTML posture report with automated scheduling. | PowerShell, Az Module, Microsoft Graph, Azure |
+
+### Detection Engineering & Threat Hunting
+
+| Project | Description | Tools |
+|---------|-------------|-------|
+| [KQL Detection Rules Library](KQL%20Detection%20Rules/KQL%20Detection%20Rules.md) | Curated library of 12 KQL detection rules for Microsoft Sentinel mapped to MITRE ATT&CK — covering brute force, impossible travel, PowerShell abuse, credential dumping, lateral movement, data exfiltration, and more. Each rule includes severity, false positive guidance, and response actions. | KQL, Microsoft Sentinel, MITRE ATT&CK |
+| [Threat Hunting Queries & Hypotheses](Threat%20Hunting/Threat%20Hunting.md) | Hypothesis-driven threat hunting playbook with 8 hunts — LOLBin abuse, DNS tunneling, lateral movement, persistence mechanisms, LSASS credential access, Azure AD attacks, data staging, and phishing post-compromise. Each hunt includes full KQL queries, triage steps, and ATT&CK mapping. | KQL, Microsoft Sentinel, Defender for Endpoint, MITRE ATT&CK |
+
+### Incident Response
+
+| Project | Description | Tools |
+|---------|-------------|-------|
+| [Incident Response Playbooks](Incident%20Response%20Playbooks/Incident%20Response%20Playbooks.md) | NIST 800-61 aligned incident response playbooks for ransomware, phishing/BEC, compromised credentials, and data exfiltration. Includes severity classification matrix, roles and responsibilities, evidence collection checklists, chain of custody templates, and post-incident review framework. | NIST 800-61, MITRE ATT&CK, Microsoft 365 Defender |
+
 ---
 
 ## Contact
