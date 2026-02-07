@@ -1,0 +1,15 @@
+hash,type,threat_name,severity,description
+44d88612fea8a8f36de82e1278abb02f,md5,EICAR-Test-File,low,EICAR antivirus test file
+3395856ce81f2b7382dee72602f798b642f14140,sha1,EICAR-Test-File,low,EICAR antivirus test file
+275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f,sha256,EICAR-Test-File,low,EICAR antivirus test file
+a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6,md5,Trojan.GenericKD.46789,critical,Generic trojan dropper
+b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7a8b9c0d1,sha1,Trojan.GenericKD.46789,critical,Generic trojan dropper
+d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5,sha256,Ransom.WannaCry,critical,WannaCry ransomware variant
+e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0,md5,Backdoor.Cobalt,high,Cobalt Strike beacon payload
+f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5,sha1,Backdoor.Cobalt,high,Cobalt Strike beacon payload
+a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2,md5,Miner.CoinMiner,medium,Cryptocurrency miner
+b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3a4b5c6d7,sha1,Miner.CoinMiner,medium,Cryptocurrency miner
+c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0,sha256,Trojan.Emotet,critical,Emotet banking trojan
+d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5,md5,PUP.Adware.Generic,low,Potentially unwanted adware program
+e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0,sha1,Exploit.CVE-2021-44228,critical,Log4Shell exploitation artifact
+f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3,sha256,Exploit.CVE-2021-44228,critical,Log4Shell exploitation artifact

@@ -1,0 +1,12 @@
+# Python Security Toolkit - Requirements
+# Most scripts use only the Python standard library.
+# The following are optional dependencies for enhanced functionality.
+
+# Optional: Rich console output for formatted tables and progress bars
+# rich>=13.0.0
+
+# Optional: Requests library for IOC feed downloads from remote sources
+# requests>=2.31.0
+
+# No external dependencies required for core functionality.
+# All scripts run with Python 3.8+ standard library.
